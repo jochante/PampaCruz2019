@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width= device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Pampa Cruz</title>
+	<link rel="stylesheet" type="text/css" href="Miestilo.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+    <body class="body">
+	   <header class="bg-secondary">
+        <div class="cabecera">
+            <nav class="navbar navbar-expand-md navbar-dark">
+                <h3 class="Pampa">Comunidad de Pampa Cruz</h3>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbar"><!--para dar la ubicacion a los menus de navegacion-->
+                    <ul class="navbar-nav X"><!--esto es lo que ordena los menus de navegacion-->
+                        <li class="nav-item"><a class="nav-link" href="inicio.html">INICIO</a></li>
+                        <li class="nav-item"><a class="nav-link" href="costumbres.html">COSTUMBRES</a></li>
+                        <li class="nav-item"><a class="nav-link" href="desarrollado.html">DESARROLLADO</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">CONTACTO</a></li>
+                        <form class="form-inline">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">BUSCAR</button>
+                        </form>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        
+
+        <section>
+
+            <div class="p-3 mb-2 bg-dark text-white">
+                  <span class="badge badge-warning">   <h3><b>Iniciar Sesión</b></h3></span>
+                <form>
+                  <div class="row">
+                    <div class="col">
+                      <input type="text" class="form-control contraseña" placeholder="Nombre">
+                    </div>
+                    <div class="col">
+                      <input type="text" class="form-control contraseña" placeholder="Apellido">
+                    </div>
+                  </div>
+                </form>
+
+                <form class="form-inline contraseña">
+                  <div class="form-group mx-sm-3 mb-2">
+                    <label for="inputPassword2" class="sr-only">Password</label>
+                    <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+                  </div>
+                  <button type="submit" class="btn btn-primary mb-2">Suscribirse</button>
+                </form>
+                
+                 <div class="form-group">
+                    <label for="exampleFormControlTextarea1"><b>MENSAJE</b></label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <button type="button" class="btn btn-success">ENVIAR</button>
+                </div>
+
+
+
+
+                <span class="badge badge-warning">   <h3><b>Suscríbete a mi boletín</b></h3></span>
+                  
+             
+                
+
+                <form class="needs-validation" novalidate>
+          <div class="form-row">
+            <div class="col-md-4 mb-3">
+              <label for="validationCustom01">NOMBRE</label>
+              <input type="text" class="form-control" id="validationCustom01" placeholder="nombre"required>
+              <div class="valid-feedback">
+                porfavor introdusca bien su nombre!
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="validationCustom02">APELLIDO</label>
+              <input type="text" class="form-control" id="validationCustom02" placeholder="Apellido" required>
+              <div class="valid-feedback">
+                Please provide a valid state.
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="validationCustomUsername">CORREO</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroupPrepend">@</span>
+                </div>
+                <input type="text" class="form-control" id="validationCustomUsername" placeholder="email" aria-describedby="inputGroupPrepend" required>
+                <div class="invalid-feedback">
+                    Please provide a valid state.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-md-6 mb-3">
+              <label for="validationCustom03">Ciudad</label>
+              <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
+              <div class="invalid-feedback">
+                Please provide a valid state.
+              </div>
+            </div>
+            <div class="col-md-3 mb-3">
+              <label for="validationCustom04">Estado</label>
+              <input type="text" class="form-control" id="validationCustom04" placeholder="State" required>
+              <div class="invalid-feedback">
+                Please provide a valid state.
+              </div>
+            </div>
+            <div class="col-md-3 mb-3">
+              <label for="validationCustom05">Edad</label>
+              <input type="text" class="form-control" id="validationCustom05" placeholder="edad" required>
+              <div class="invalid-feedback">
+                Please provide a valid zip.
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+              <label class="form-check-label" for="invalidCheck">
+                Aceptar los términos y condiciones
+              </label>
+              <div class="invalid-feedback">
+                You must agree before submitting.
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-primary" type="submit">CONFIRMAR</button>
+        </form>
+
+        <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function() {
+          'use strict';
+          window.addEventListener('load', function() {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function(form) {
+              form.addEventListener('submit', function(event) {
+                if (form.checkValidity() === false) {
+                  event.preventDefault();
+                  event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+              }, false);
+            });
+          }, false);
+        })();
+        </script>
+
+                
+            </div>
+        </section>
+
+
+    </main>
+
+     <footer>
+      <p class="text-center"> Desarrollado por OCHANTE HUAMACCTO, JULIHÑO &copy; 2019</p>
+    </footer>
+
+
+	<script src="js/jquery.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

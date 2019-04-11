@@ -1,0 +1,76 @@
+.body{
+	background: #808080;
+}
+.cabecera{
+	background: #008080;
+}
+
+.Pampa{
+	color: #00ffff;
+}
+
+.CRUZ{
+	color: #00ff00;
+}
+
+.texto{
+	background: white;
+}
+
+.margen{
+	margin: 40px;
+	flood-color: red;
+}
+
+footer{
+  padding:20px;
+  margin-top:20px;
+  color:#ffffff;
+  background-color:black;
+  text-align: center;
+}
+.CabeceraTexto{
+	background: silver;
+}
+
+.HABILIDADES{
+	margin: 50px;
+}
+
+.julihño{
+	margin: 80px;
+}
+
+.separar{
+	position:absolute;right:-15%;/*posicion de la letra*/
+	margin: 30px;
+}
+
+.PATRONAL{
+	margin: 40px;
+}
+
+.costumbres{
+	margin: 40px;
+}
+
+.oscuro{
+	background:	#C0C0C0;
+}
+
+.suscribete{
+	position:absolute;right:15%;/*posicion de la letra*/
+	margin: -38px;
+}
+
+.contraseña{
+	margin: 15px;
+
+}
+
+a:hover { 
+  background-color:#808080;
+}
+
+
+
